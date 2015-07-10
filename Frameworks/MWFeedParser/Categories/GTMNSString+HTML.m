@@ -356,7 +356,7 @@ static HTMLEscapeMap gUnicodeHTMLEscapeMap[] = {
 
 
 // Utility function for Bsearching table above
-static int EscapeMapCompare(const void *ucharVoid, const void *mapVoid) {
+  static int EscapeMapCompare(const void *ucharVoid, const void *mapVoid) {
 	const unichar *uchar = (const unichar*)ucharVoid;
 	const HTMLEscapeMap *map = (const HTMLEscapeMap*)mapVoid;
 	int val;
@@ -369,6 +369,7 @@ static int EscapeMapCompare(const void *ucharVoid, const void *mapVoid) {
 	}
 	return val;
 }
+
 
 @implementation NSString (GTMNSStringHTMLAdditions)
 

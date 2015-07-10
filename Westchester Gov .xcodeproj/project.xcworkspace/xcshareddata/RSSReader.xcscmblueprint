@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "87570C89D60D9C850BA34D13F145EA61DDC4BEA5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "120CCCF80F89CC2ED75E99BC74642C22617E586E" : 0,
+    "87570C89D60D9C850BA34D13F145EA61DDC4BEA5" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2506E154-BFF6-4118-AB1B-EFDD5805BCBB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "120CCCF80F89CC2ED75E99BC74642C22617E586E" : "RSSReader",
+    "87570C89D60D9C850BA34D13F145EA61DDC4BEA5" : "RSS-Reader%20\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "RSSReader",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 203,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "RSSReader.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/devcarlos\/RSSReader.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "120CCCF80F89CC2ED75E99BC74642C22617E586E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/cpoti24\/RSSReader.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "87570C89D60D9C850BA34D13F145EA61DDC4BEA5"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--RSS -->
+        <!--Westchester Gov -->
         <scene sceneID="NXK-ha-VHt">
             <objects>
                 <tableViewController storyboardIdentifier="RSSMaster" id="1ji-WR-oTb" customClass="RSSMaster" sceneMemberID="viewController">
@@ -15,8 +15,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RSSCell" rowHeight="100" id="jQc-Au-XJo" customClass="RSSCell">
+                                <rect key="frame" x="0.0" y="86" width="600" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jQc-Au-XJo" id="WKP-Cm-usV">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="99"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Article title " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bzl-Z5-39b">
@@ -80,7 +82,7 @@
                             <outlet property="delegate" destination="1ji-WR-oTb" id="wzI-nN-tHt"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="RSS " id="yxF-fr-TUb"/>
+                    <navigationItem key="navigationItem" title="Westchester Gov " id="yxF-fr-TUb"/>
                     <connections>
                         <outlet property="searchDisplayController" destination="fdY-40-TD7" id="pmH-ns-XDn"/>
                     </connections>
@@ -95,7 +97,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1081" y="107"/>
+            <point key="canvasLocation" x="1065" y="107"/>
         </scene>
         <!--Detail-->
         <scene sceneID="ufC-wZ-h7g">
@@ -109,7 +111,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NnV-0F-jpD">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFU-9H-V64">
+                                <rect key="frame" x="548" y="20" width="44" height="30"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Share ">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NnV-0F-jpD">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
@@ -124,13 +133,24 @@
                             <constraint firstItem="NnV-0F-jpD" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="rHE-NU-4o4"/>
                         </constraints>
                         <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="kFU-9H-V64"/>
+                            </mask>
                             <mask key="constraints">
                                 <exclude reference="3tR-9R-HdA"/>
                                 <exclude reference="nCZ-yT-SZX"/>
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="49I-1S-1dy"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="49I-1S-1dy">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="egq-ti-uEK" userLabel="Share ">
+                            <connections>
+                                <action selector="Share:" destination="vXZ-lx-hvc" id="NfV-RT-tVF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="webView" destination="NnV-0F-jpD" id="gzl-PC-CXR"/>
                     </connections>
@@ -144,9 +164,10 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="udT-Rn-PnA" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Raj-1Q-UYq">
+                    <navigationBar key="navigationBar" userInteractionEnabled="NO" contentMode="scaleToFill" id="Raj-1Q-UYq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.81960784313725488" green="0.81960784313725488" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -158,4 +179,5 @@
             <point key="canvasLocation" x="269" y="107"/>
         </scene>
     </scenes>
+    <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
 </document>

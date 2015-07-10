@@ -21,6 +21,9 @@
 
 @synthesize rssURL, itemsToDisplay, filteredItems, reloadTimer;
 
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -146,13 +149,20 @@
     return UIStatusBarStyleLightContent;
 }
 
+
+
 #pragma mark - Adjust Functions
 
 - (void)adjustNavBar
 {
     //navigation bar color (from mockup)
-    self.navigationController.navigationBar.barTintColor = [UIColor redColor];
-    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor]};
+
+
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:0.008 green:.22 blue:.514 alpha:1.0];
+    
+    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor colorWithRed:.82 green:.82 blue:.82 alpha:1.0]};
+    
+
     self.navigationController.navigationBar.backgroundColor = [UIColor whiteColor];
     self.navigationController.navigationBar.translucent = YES;
 }
@@ -194,7 +204,7 @@
         
        // NSString *imageURLstr = item.thumbnailURL ? item.thumbnailURL : @"";
         
-        NSString *imageURLstr= @"<description><![CDATA[<p><img style=\"margin-bottom: 2px; margin-left: 10px; float: right;\" src=\"http://www3.westchestergov.com/images/stories/newsPrimary2015/bbqsafety.jpg\" alt=\"bbqsafety\" width=\"333\" height=\"222\" />July 1, 2015 -- As you fire up the grill this summer, the Westchester County Department of Health has a dozen tips to help you not only grill safely but also prevent West Nile Virus, salmonella or a food borne illness:</p> ";
+        NSString *imageURLstr=item.summary;
         imageURLstr = [imageURLstr substringToIndex:[imageURLstr rangeOfString:@"alt="].location-2];
         imageURLstr = [imageURLstr substringFromIndex:[imageURLstr rangeOfString:@"src="].location+[@"src=" length]+1];
     
