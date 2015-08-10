@@ -33,7 +33,11 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 
-    [self adjustNavBar];
+    
+    // Need to ajust navigation bar color
+    
+    
+   //  [self adjustNavBar];
     
     
     formatter = [[NSDateFormatter alloc] init];
@@ -153,19 +157,9 @@
 
 #pragma mark - Adjust Functions
 
-- (void)adjustNavBar
-{
-    //navigation bar color (from mockup)
+//navigation bar color (adjustNavBar) customization code
 
 
-    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:0.008 green:.22 blue:.514 alpha:1.0];
-    
-    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor colorWithRed:.82 green:.82 blue:.82 alpha:1.0]};
-    
-
-    self.navigationController.navigationBar.backgroundColor = [UIColor whiteColor];
-    self.navigationController.navigationBar.translucent = YES;
-}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -24,7 +24,7 @@
     NSURL *URL = [NSURL URLWithString:feedURL];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:URL];
     webView.delegate = self;
-    [webView loadRequest:requestObj];
+    [webView loadRequest:requestObj]; 
 }
 
 - (void)didReceiveMemoryWarning {

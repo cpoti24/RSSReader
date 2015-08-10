@@ -27,6 +27,7 @@
 		1385737A1A6773A400A0A043 /* SearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 138573781A6773A400A0A043 /* SearchCell.m */; };
 		1385737B1A6773A400A0A043 /* SearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 138573791A6773A400A0A043 /* SearchCell.xib */; };
 		C53EEBCB1B4D97B900C59E0A /* CountyLogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C53EEBCA1B4D97B900C59E0A /* CountyLogo.jpg */; };
+		C565BE671B5579A9004D1369 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C565BE661B5579A9004D1369 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		138573781A6773A400A0A043 /* SearchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchCell.m; path = Classes/SearchCell.m; sourceTree = "<group>"; };
 		138573791A6773A400A0A043 /* SearchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SearchCell.xib; path = Classes/SearchCell.xib; sourceTree = "<group>"; };
 		C53EEBCA1B4D97B900C59E0A /* CountyLogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = CountyLogo.jpg; path = "App images /CountyLogo.jpg"; sourceTree = SOURCE_ROOT; };
+		C565BE661B5579A9004D1369 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C565BE671B5579A9004D1369 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +104,7 @@
 		1385731D1A67024D00A0A043 = {
 			isa = PBXGroup;
 			children = (
+				C565BE661B5579A9004D1369 /* UIKit.framework */,
 				138573281A67024D00A0A043 /* WestchesterGov  */,
 				138573421A67024D00A0A043 /* RSSReaderTests */,
 				138573271A67024D00A0A043 /* Products */,
